@@ -1,5 +1,5 @@
 # Seattle-Accessory-Dwelling-Units
-This repository seeks to explore the current status of Attached Accessory Dwelling Units (AADUs) and Detached Accessory Dwelling Units (DADUs) in Seattle over time.
+This repository examines the current status of Attached Accessory Dwelling Units (AADUs) and Detached Accessory Dwelling Units (DADUs) in Seattle. Specifically, I am seeking to explore the trends of ADU permitting, construction, and utilization in Seattle over time using open source data from the [City of Seattle Open Data Portal](https://data.seattle.gov/). 
 
 ## Contributor(s)
 Tyler Bonnell 
@@ -11,7 +11,6 @@ Seattle is an excellent microcosm to examine the utility and promise of Accessor
 - Seattle is among the most expensive real-estate markets in the United States (In 2023, [Kiplinger rated Seattle as the 12th most expensive real estate market in the United States](https://www.kiplinger.com/real-estate/603612/15-us-cities-with-the-highest-average-home-prices) with an average home price of $937,623).
 - In September 2020, the City of Seattle launched the [ADUniverse](https://aduniverse-seattlecitygis.hub.arcgis.com/), an online hub with guides to building ADUs, a locator tool to determine if a property is eligible to build a ADU on (per city code), as well as pre-approved ADU plans. In short, they have greatly streamlined the administrative and bureaucratic process to begin building an ADU in the city. 
 
-Through this repository, I am seeking to explore the trends of ADU permitting, construction, and utilization in Seattle over time using open source data from the [City of Seattle Open Data Portal](https://data.seattle.gov/). 
 
 ### Analysis Questions
 1. How has the number of 1) ADU permits and 2) ADU units built changed over time? Was there a significant increase after the launch of the ADUniverse? 
