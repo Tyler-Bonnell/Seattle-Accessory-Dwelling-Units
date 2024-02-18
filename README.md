@@ -18,3 +18,10 @@ Through this repository, I am seeking to explore the trends of ADU permitting, c
 - Has the process of reviewing and deciding on permit status speed up after the launch of ADUniverse?
 - What regions (neighborhoods, council districts) have the greatest number of ADUs? 
 - In 2023, were AADUs or DADUs the more popular? 
+
+### Skills Learned:
+- String (with regex), DateTime, and Categorical variable manipulation.
+- .apply() -- Cleaning multiple variables using single operations.
+- zipping lists into dictionaries --> to rename columns in pandas data frames.
+- Cenpy -- Pulling Census Data via API and joining data to pandas data frames. 
+- Feather -- Storing data in a universal format with fast read/write times using Apache Spark.
