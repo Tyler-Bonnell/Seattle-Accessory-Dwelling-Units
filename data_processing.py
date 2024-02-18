@@ -1,27 +1,15 @@
 # data_processing.py
-# Source: [City of Seattle Open Data Portal](https://data.seattle.gov/)
 # Last Updated: 2/18/2024
-# Description: This script will be utilized to load, join, and clean City of Seattle
-# Accessory Dwelling Unit (ADU) and American Community Survey (ACS) 5-Year Estimate Data
-# in preparation for an analysis examining the recent landscape of ADUs in Seattle. 
+# Description: This script will be utilized to load, join, and clean City of Seattle Accessory Dwelling Unit (ADU) and American Community Survey (ACS) 5-Year Estimate Data in preparation for an analysis examining the recent landscape of ADUs in Seattle. 
+# Source: [City of Seattle Open Data Portal](https://data.seattle.gov/)
 
 # Setup
-
-## Install Packages
-# !pip install pyarrow
-# !pip install geopandas
-# !pip install rtree
-# !pip install cenpy
 
 ## Load Packages
 
 ## General
-from pprint import pprint # For tidy printing
-import numpy as np 
 import pandas as pd
 import geopandas # for geospatial data
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 ## Data Storage & Filepaths
 import pyarrow.feather as feather
@@ -29,9 +17,7 @@ from pathlib import Path # For storing filepaths as a Path Object
 
 ## API Pulls
 import cenpy # ACS Data
-# import requests
-# from io import StringIO
-# import time # To record elapsed time
+
 
 # Pull/Load Data
 
@@ -111,7 +97,9 @@ vars_cat = ['type_of_dwelling_unit', 'neighborhood','council_district']
 dat_adu[vars_cat] = dat_adu[vars_cat].apply(lambda var: var.astype('category'))
 
 # Correct Category Naming (ADU --> AADU)
-dat_adu['type_of_dwelling_unit'] = dat_adu['type_of_dwelling_unit'].cat.rename_categories({'ADU':'AADU'})
+dat_adu['type_of_dwelling_unit'] = (dat_adu['type_of_dwelling_unit']
+                                    .cat.rename_categories({'ADU':'AADU'})
+                                    )
 
 ## 3) Integers: Floats --> Integers
 vars_int = ['demolished_units_permitted', 'net_units_permitted']
